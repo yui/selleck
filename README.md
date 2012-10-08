@@ -5,7 +5,7 @@ Selleck is a tool for generating documentation from Mustache-based templates. It
 was created to generate documentation for the YUI Library. It's still young and
 evolving rapidly, but you may find it useful.
 
-See <http://rgrove.github.com/selleck/> for detailed information and usage
+See <http://yui.github.com/selleck/> for detailed information and usage
 instructions, as well as an example of the kinds of docs Selleck generates.
 
 If you'd like to see more, [check out this sample][ac-docs] of the YUI 3
