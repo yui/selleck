@@ -8,10 +8,10 @@ Licensed under the BSD License.
 var fs        = require('fs'),
     fsPath    = require('path'),
 
-    selleck   = require('selleck'),
-    fileutils = require('selleck/lib/fileutils'),
-    higgins   = require('selleck/lib/higgins'),
-    util      = require('selleck/lib/util'), // Selleck's util, not Node's util.
+    selleck   = require('../'),
+    fileutils = require('../lib/fileutils'),
+    higgins   = require('../lib/higgins'),
+    util      = require('../lib/util'), // Selleck's util, not Node's util.
 
     arg,
     args  = [], // leftover args after params are parsed out of argv
