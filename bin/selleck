@@ -189,7 +189,7 @@ options['out-assets'] || (options['out-assets'] = fsPath.join(options.out, 'asse
 
 if (options.server) {
     // If running as a server, start the server instead of continuing.
-    require('selleck/lib/server')(options);
+    require('../lib/server')(options);
 } else {
     // Load theme layouts and partials, and copy theme assets to the output dir,
     // if there are any.
