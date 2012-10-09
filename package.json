@@ -3,10 +3,13 @@
     "description": "Generator for YUI's Handlebars-based user documentation.",
 
     "version"    : "0.1.15",
-    "homepage"   : "https://github.com/rgrove/selleck/",
+    "homepage"   : "http://yui.github.com/selleck/",
     "author"     : "Ryan Grove <ryan@wonko.com> (http://wonko.com/)",
     "copyright"  : "Copyright (c) 2012 Yahoo! Inc. All rights reserved.",
-
+    "bugs": { "url" : "http://github.com/yui/selleck/issues" },
+    "contributors": [
+        { "name": "Dav Glass", "email": "davglass@gmail.com" }
+    ],
     "keywords"   : ["yui", "handlebars", "mustache", "docs", "documentation"],
 
     "licenses": [
@@ -15,7 +18,7 @@
 
     "repository": {
         "type": "git",
-        "url" : "git://github.com/rgrove/selleck.git"
+        "url" : "git://github.com/yui/selleck.git"
     },
 
     "engines": [
