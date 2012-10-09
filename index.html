@@ -24,7 +24,10 @@
     <div class="yui3-g">
         <div class="yui3-u-3-4">
             <div id="main">
-                <div class="content"><div class="intro">
+                <div class="content"><a href="https://github.com/yui/selleck"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
+
+<div class="intro">
 <p>
 Selleck is a tool for generating user documentation from <a href="http://mustache.github.com/">Mustache</a>-based templates. It was created to generate documentation for the YUI Library. At the moment this document and Selleck itself are pretty YUI-specific, but over time Selleck will become a more generic tool, and the YUI-specific parts of the workflow (and this document) will be broken out.
 </p>
@@ -45,6 +48,8 @@ Install Selleck using npm:
 <pre class="code terminal"><span class="noselect">$ </span>npm install selleck -g</pre>
 
 
+<p>The current stable version of Selleck is: <code>0.1.15</code></p>
+
 <p>
 Or clone the <a href="https://github.com/yui/selleck/">GitHub repo</a> to install the latest development version:
 </p>
@@ -52,6 +57,30 @@ Or clone the <a href="https://github.com/yui/selleck/">GitHub repo</a> to instal
 <pre class="code terminal"><span class="noselect">$ </span>git clone git:&#x2F;&#x2F;github.com&#x2F;yui&#x2F;selleck.git
 <span class="noselect">$ </span>cd selleck &amp;&amp; npm install -g</pre>
 
+
+<h3 id="running-the-tests">Running the tests</h3>
+
+<p>Selleck tests are written in <a href="http://vowsjs.org">vows</a>.</p>
+
+<pre class="code terminal"><span class="noselect">$ </span>git clone git:&#x2F;&#x2F;github.com&#x2F;yui&#x2F;selleck.git
+<span class="noselect">$ </span>cd selleck &amp;&amp; npm install
+<span class="noselect">$ </span>npm test</pre>
+
+
+<p>Developing with Selleck can be done easily with <code>npm link</code>.</p>
+
+<pre class="code terminal"><span class="noselect">$ </span>git clone git:&#x2F;&#x2F;github.com&#x2F;yui&#x2F;selleck.git
+<span class="noselect">$ </span>cd selleck
+<span class="noselect">$ </span>sudo npm link</pre>
+
+
+<p>After linking, you can edit the code in the repo and use the global <code>selleck</code> command on other projects for testing.</p>
+
+<h3 id="build-status">Build Status</h3>
+
+<p>Each push to Github results in a <a href="https://travis-ci.org/yui/selleck">Travis-CI</a> build.
+Current build status: <img src="https://secure.travis-ci.org/yui/selleck.png">
+</p>
 
 <h2 id="overview">Overview</h2>
 
@@ -461,6 +490,14 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 </li>
 <li>
 <a href="#installation">Installation</a>
+<ul class="toc">
+<li>
+<a href="#running-the-tests">Running the tests</a>
+</li>
+<li>
+<a href="#build-status">Build Status</a>
+</li>
+</ul>
 </li>
 <li>
 <a href="#overview">Overview</a>
