@@ -14,6 +14,11 @@ AutoComplete docs and examples, generated using Selleck.
 [ac-docs]:http://dl.dropbox.com/u/131998/yui/docs/autocomplete/index.html
 
 
+Build Status
+------------
+
+[![Build Status](https://secure.travis-ci.org/yui/selleck.png)](http://travis-ci.org/yui/selleck)
+
 License
 -------
 
