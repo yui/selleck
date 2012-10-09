@@ -32,6 +32,32 @@ $ git clone git://github.com/yui/selleck.git
 $ cd selleck && npm install -g
 ```
 
+<h3>Running the tests</h3>
+
+<p>Selleck tests are written in <a href="http://vowsjs.org">vows</a>.</p>
+
+```terminal
+$ git clone git://github.com/yui/selleck.git
+$ cd selleck && npm install
+$ npm test
+```
+
+<p>Developing with Selleck can be done easily with `npm link`.</p>
+
+```terminal
+$ git clone git://github.com/yui/selleck.git
+$ cd selleck
+$ sudo npm link
+```
+
+<p>After linking, you can edit the code in the repo and use the global `selleck` command on other projects for testing.</p>
+
+<h3>Build Status</h3>
+
+<p>Each push to Github results in a <a href="https://travis-ci.org/yui/selleck">Travis-CI</a> build.
+Current build status: <img src="https://secure.travis-ci.org/yui/selleck.png">
+</p>
+
 <h2>Overview</h2>
 
 <p>

@@ -56,6 +56,30 @@ Or clone the <a href="https://github.com/yui/selleck/">GitHub repo</a> to instal
 <span class="noselect">$ </span>cd selleck &amp;&amp; npm install -g</pre>
 
 
+<h3 id="running-the-tests">Running the tests</h3>
+
+<p>Selleck tests are written in <a href="http://vowsjs.org">vows</a>.</p>
+
+<pre class="code terminal"><span class="noselect">$ </span>git clone git:&#x2F;&#x2F;github.com&#x2F;yui&#x2F;selleck.git
+<span class="noselect">$ </span>cd selleck &amp;&amp; npm install
+<span class="noselect">$ </span>npm test</pre>
+
+
+<p>Developing with Selleck can be done easily with <code>npm link</code>.</p>
+
+<pre class="code terminal"><span class="noselect">$ </span>git clone git:&#x2F;&#x2F;github.com&#x2F;yui&#x2F;selleck.git
+<span class="noselect">$ </span>cd selleck
+<span class="noselect">$ </span>sudo npm link</pre>
+
+
+<p>After linking, you can edit the code in the repo and use the global <code>selleck</code> command on other projects for testing.</p>
+
+<h3 id="build-status">Build Status</h3>
+
+<p>Each push to Github results in a <a href="https://travis-ci.org/yui/selleck">Travis-CI</a> build.
+Current build status: <img src="https://secure.travis-ci.org/yui/selleck.png">
+</p>
+
 <h2 id="overview">Overview</h2>
 
 <p>
@@ -464,6 +488,14 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 </li>
 <li>
 <a href="#installation">Installation</a>
+<ul class="toc">
+<li>
+<a href="#running-the-tests">Running the tests</a>
+</li>
+<li>
+<a href="#build-status">Build Status</a>
+</li>
+</ul>
 </li>
 <li>
 <a href="#overview">Overview</a>
