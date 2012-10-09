@@ -1,7 +1,10 @@
 install:
 	npm install
 
-docs:
+version:
+	./scripts/versions.js
+
+docs: version
 	cd docs/raw && ../../bin/selleck -o ../html
 
 deploydocs: docs
