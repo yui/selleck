@@ -76,6 +76,9 @@ var fs        = require('fs'),
         "                         instead of the default (.html).",
         "  --out-meta <filename>  Write combined project and component JSON metadata to",
         "                         the specified filename.",
+        "  --handlebars <file>    Path to a JS file that exports a single function that",
+        "                         will be passed a Handlebars instance. This may be used",
+        "                         to register additional helpers for handlebars",
         ""
     ].join('\n');
 
@@ -128,6 +131,10 @@ while ((arg = argv.shift())) {
     case '--out-metadata':
     case '--out-meta':
         options['out-meta'] = argv.shift();
+        break;
+
+    case '--handlebars':
+        options.handlebarsConfig = argv.shift();
         break;
 
     case '--project':
@@ -198,6 +205,7 @@ if (options.server) {
     theme.partials = selleck.getPartials(options.theme);
 
     // Traverse the root path and look for documentation directories.
+    selleck.configureHandlebars(options.handlebarsConfig);
     docs = selleck.findDocs(options.rootPath, docs);
 
     if (docs.project) {
