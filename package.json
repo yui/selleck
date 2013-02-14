@@ -28,7 +28,8 @@
 
     "dependencies": {
         "express"    : ">=2.3.0 <2.6.0",
-        "graceful-fs": "~1.1"
+        "graceful-fs": "~1.2",
+        "cpr": "~0.0.2"
     },
     "devDependencies": {
         "yui-lint": "~0.1.1",
