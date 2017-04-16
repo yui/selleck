@@ -1,6 +1,7 @@
 **/node_modules/
 **/npm-debug.log
 node_modules/
+npm-debug.log
 tmp/
 CVS/
 .DS_Store
